@@ -124,6 +124,7 @@ show-version:
 
 
 LIBHTS_OBJS = \
+	lzma_stub.o \
 	kfunc.o \
 	knetfile.o \
 	kstring.o \
