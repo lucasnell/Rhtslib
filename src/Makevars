@@ -11,7 +11,7 @@ ifeq (${platform},Darwin)
 
 ## Linker options. Make sure to keep Rhtslib::pkgconfig() function (defined
 ## in R/zzz.R) in sync with this.
-PKG_LIBS="${USRLIB_DIR}/libhts.a"
+PKG_LIBS="${USRLIB_DIR}/libhts.a" "/usr/local/lib/liblzma.a"
 
 populate-usrlib-dir: htslib mk-usrlib-dir
 	cd "${HTSLIB_SOURCE_DIR}" && cp libhts.a "${USRLIB_DIR}"
